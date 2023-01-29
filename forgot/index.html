@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SITE NAME </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="http://localhost/game/deps/vendor/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CSS-->
+    <!-- <link rel="stylesheet" href="http://localhost/game/deps/vendor/font-awesome/css/font-awesome.min.css"> -->
+
+    <!-- Font Awesome CSS Pro-->
+    <link rel="stylesheet" href="http://localhost/game/deps/vendor/fontawesome-pro/css/all.css">
+
+
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="http://localhost/game/deps/css/font.css">
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="http://localhost/game/deps/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="http://localhost/game/deps/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="http://localhost/game/deps/img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+        <script src="http://localhost/game/deps/js/gohst.js"></script>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
+            <!-- Logo & Information Panel-->
+            <div class="col-lg-6">
+              <div class="info d-flex align-items-center">
+                <div class="content">
+                  <div class="logo">
+                    <h1>SITE NAME</h1>
+                  </div>
+                  <p>SITE LOGO</p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
+            <div class="col-lg-6 bg-white">
+              <div class="form d-flex align-items-center">
+                <div class="content">
+                  <form method="post" class="form-validate user-form">
+                    <div class="form-group">
+                      <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="form-inputs input-material">
+                      <label for="login-username" class="label-material">User Name</label>
+                      <div class="loginUsername feed"></div>
+                    </div>
+                    <div class="form-group">
+                      <input id="login-email" type="email" name="loginEmail" required data-msg="Please enter your email" class="form-inputs input-material">
+                      <label for="login-email" class="label-material">Email</label>
+                      <div class="loginPassword feed"></div>
+                    </div>
+                    <div class="form-btn-container form-group text-center">
+                      <button id="login" type="submit" class="form-btn btn btn-primary">
+                        <div class="btn-icon" hidden><i class="fa fa-spider-web fa-spin"></i></div>
+                        <div class="btn-text">
+                          <i class="fa fa-send-back"></i>&nbsp;&nbsp;&nbsp;Reset Link
+                        </div>
+                      </button>
+                    </div>
+                    <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+                  </form><a href="http://localhost/game/forgot/" class="forgot-pass">Forgot Password?</a><br><small>Not yet a member? </small><a href="http://localhost/game/signup/" class="signup">Signup</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="http://localhost/game/deps/vendor/jquery/jquery.min.js"></script>
+    <script src="http://localhost/game/deps/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="http://localhost/game/deps/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://localhost/game/deps/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="http://localhost/game/deps/vendor/chart.js/Chart.min.js"></script>
+    <script src="http://localhost/game/deps/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="http://localhost/game/deps/js/front.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

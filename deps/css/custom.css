@@ -1,0 +1,28 @@
+/* your styles go here */
+
+*::-webkit-scrollbar {
+    display: none !important;
+}
+
+.feed {
+    position: absolute;
+    top: 1em;
+    right: 0;    
+    width: fit-content;
+    height: fit-content;
+    color: #cccf20 !important;
+}
+
+.form-btn-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5em;
+}
