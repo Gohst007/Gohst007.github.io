@@ -143,16 +143,22 @@ function svr(inputs = []) {
 
     let process = { reason: 'forgot', data: data };
 
-    flash('core/app.php', process)
-        .then(response => {
-            load_btn('stop');
+    // flash('core/app.php', process)
+    //     .then(response => {
+    //         load_btn('stop');
 
-            let feed = response.feed;
+    //         let feed = response.feed;
 
-            feed = JSON.parse(feed);
+    //         feed = JSON.parse(feed);
 
-            console.log(feed);
-        });
+    //         console.log(feed);
+    //     });
+
+    alert('Password reset successfull');
+
+    setTimeout(() => {
+        location.href="https://gohst007.github.io/account/";
+    }, 1000);
 }
 
 export function init_app() {
