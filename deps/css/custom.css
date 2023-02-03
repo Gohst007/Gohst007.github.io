@@ -1,5 +1,9 @@
 /* your styles go here */
 
+:root {
+    --modal-radius: 50px;
+}
+
 *::-webkit-scrollbar {
     display: none !important;
 }
@@ -25,4 +29,34 @@
     flex-wrap: nowrap;
     justify-content: center;
     gap: 0.5em;
+}
+
+.page-content {
+    height: 100vh !important;
+}
+
+.game-display-container {
+    height: 25em;
+    width: 15em;  
+}
+
+.game-display {
+    background: url('http://localhost/game/deps/img/games/2k23-ps4.png');
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 15em;
+}
+
+body {
+    background: #22252a;
+}
+
+.load-modal-content {
+    border-radius: var(--modal-radius) !important;
+}
+
+.index-content-container {
+    padding: 0;
+    margin: 0.5em;
+    overflow: hidden;
 }

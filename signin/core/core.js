@@ -143,16 +143,22 @@ function svr(inputs = []) {
 
     let process = { reason: 'login', data: data };
 
-    flash('core/app.php', process)
-        .then(response => {
-            load_btn('stop');
+    // flash('core/app.php', process)
+    //     .then(response => {
+    //         load_btn('stop');
 
-            let feed = response.feed;
+    //         let feed = response.feed;
 
-            feed = JSON.parse(feed);
+    //         feed = JSON.parse(feed);
 
-            console.log(feed);
-        });
+    //         console.log(feed);
+    //     });
+
+    alert('Login successfull');
+
+    setTimeout(() => {
+        location.href="https://gohst007.github.io/account/"
+    }, 2000);
 }
 
 export function init_app() {
