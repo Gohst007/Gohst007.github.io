@@ -9,545 +9,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="https://gohst007.github.io/deps/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://gohst007.github.io/depsvendor/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome CSS-->
-  <link rel="stylesheet" href="https://gohst007.github.io/deps/vendor/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://gohst007.github.io/depsvendor/font-awesome/css/font-awesome.min.css"> -->
+
+  <!-- Font Awesome CSS Pro-->
+  <link rel="stylesheet" href="https://gohst007.github.io/depsvendor/fontawesome-pro/css/all.css">
+
   <!-- Custom Font Icons CSS-->
-  <link rel="stylesheet" href="https://gohst007.github.io/deps/css/font.css">
+  <link rel="stylesheet" href="https://gohst007.github.io/depscss/font.css">
   <!-- Google fonts - Muli-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
   <!-- theme stylesheet-->
-  <link rel="stylesheet" href="https://gohst007.github.io/deps/css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="https://gohst007.github.io/depscss/style.default.css" id="theme-stylesheet">
   <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="https://gohst007.github.io/deps/css/custom.css">
+  <link rel="stylesheet" href="https://gohst007.github.io/depscss/custom.css">
   <!-- Favicon-->
-  <link rel="shortcut icon" href="https://gohst007.github.io/deps/img/favicon.ico">
+  <link rel="shortcut icon" href="https://gohst007.github.io/depsimg/favicon.ico">
   <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+  <script src="https://gohst007.github.io/depsjs/gohst.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
-        <div class="navbar-header">
-          <!-- Navbar Header--><a href="https://gohst007.github.io/account/index.html" class="navbar-brand">
-            <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">SITE NAME</strong></div>
-            <div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>N</strong></div>
-          </a>
-          <!-- Sidebar Toggle Btn-->
-          <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
-        </div>
-        <div class="right-menu list-inline no-margin-bottom">
-          
-          <!-- Tasks-->
-          <div class="list-inline-item dropdown"><a id="navbarDropdownMenuLink2" href="#"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link tasks-toggle"><i
-                class="icon-new-file"></i><span class="badge dashbg-3">9</span></a>
-            <div aria-labelledby="navbarDropdownMenuLink2" class="dropdown-menu tasks-list"><a href="#"
-                class="dropdown-item">
-                <div class="text d-flex justify-content-between"><strong>Task 1</strong><span>40% complete</span></div>
-                <div class="progress">
-                  <div role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar dashbg-1"></div>
-                </div>
-              </a><a href="https://gohst007.github.io/account/#" class="dropdown-item">
-                <div class="text d-flex justify-content-between"><strong>Task 2</strong><span>20% complete</span></div>
-                <div class="progress">
-                  <div role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar dashbg-3"></div>
-                </div>
-              </a><a href="https://gohst007.github.io/account/#" class="dropdown-item">
-                <div class="text d-flex justify-content-between"><strong>Task 3</strong><span>70% complete</span></div>
-                <div class="progress">
-                  <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar dashbg-2"></div>
-                </div>
-              </a><a href="https://gohst007.github.io/account/#" class="dropdown-item">
-                <div class="text d-flex justify-content-between"><strong>Task 4</strong><span>30% complete</span></div>
-                <div class="progress">
-                  <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar dashbg-4"></div>
-                </div>
-              </a><a href="https://gohst007.github.io/account/#" class="dropdown-item">
-                <div class="text d-flex justify-content-between"><strong>Task 5</strong><span>65% complete</span></div>
-                <div class="progress">
-                  <div role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar dashbg-1"></div>
-                </div>
-              </a><a href="https://gohst007.github.io/account/#" class="dropdown-item text-center"> <strong>See All Tasks <i
-                    class="fa fa-angle-right"></i></strong></a>
+  <!-- <button id="load-btn" type="button" data-toggle="modal" data-target="#index-modal" class="btn btn-primary">Form in simple modal
+  </button> -->
+  <!-- Modal-->
+  <div id="index-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    class="modal fade text-left justify-content-center align-items-center">
+    <div class="modal-content-container">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content load-modal-content">
+          <div class="modal-load">
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <span><i class="fa fa-spinner fa-spin fa-3x"></i></span>
             </div>
           </div>
-          <!-- Tasks end-->
-          <!-- Log out               -->
-          <div class="list-inline-item logout"> <a id="logout" href="https://gohst007.github.io/signin/" class="nav-link">Logout <i
-                class="icon-logout"></i></a></div>
+          <div class="modal-info" hidden>
+            <div class="modal-header">
+             <strong id="exampleModalLabel" class="modal-title"></strong>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span
+                  aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <p></p>
+              <form>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email Address" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Signin" class="btn btn-primary">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <div class="d-flex align-items-stretch">
-    <!-- Sidebar Navigation-->
-    <nav id="sidebar">
-      <!-- Sidebar Navidation Menus--><span class="heading mt-4">Main</span>
-      <ul class="list-unstyled">
-        <li class="active"><a href="https://gohst007.github.io/account/"> <i class="icon-home"></i>Home </a></li>
-        <li><a href="https://gohst007.github.io/account/tables.html"> <i class="icon-grid"></i>Tables </a></li>
-        <li><a href="https://gohst007.github.io/account/charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-        <li><a href="https://gohst007.github.io/account/forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-        <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i
-              class="icon-windows"></i>Example dropdown </a>
-          <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Page</a></li>
-          </ul>
-        </li>
-        <li><a href="https://gohst007.github.io/signin/"> <i class="icon-logout"></i>Login page </a></li>
-      </ul>
-    </nav>
-    <!-- Sidebar Navigation end-->
-    <div class="page-content">
-      <div class="page-header">
-        <div class="container-fluid">
-          <h2 class="h5 no-margin-bottom">Dashboard</h2>
+    </div>
+  </div>
+  <div class="index-page-content" hidden>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="navbar-header">
+            <!-- Navbar Header--><a href="http://localhost/game/account/" class="navbar-brand">
+              <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">SITE NAME</strong>
+              </div>
+              <div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>N</strong></div>
+            </a>
+            <!-- Sidebar Toggle Btn-->
+            <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+          </div>
+          <div class="right-menu list-inline no-margin-bottom">
+            <!-- Log out               -->
+            <div class="list-inline-item logout"> <a id="logout" href="http://localhost/game/signin/"
+                class="nav-link">Logout <i class="icon-logout"></i></a></div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+      <!-- Sidebar Navigation-->
+      <nav id="sidebar">
+        <!-- Sidebar Navidation Menus--><span class="heading mt-4">Main</span>
+        <ul class="list-unstyled links-list">
+          <li link-target="home"><a href="http://localhost/game/account/" title="Home" class="side-menu-link home-init-btn"><i class="icon-home"></i>Home </a></li>
+          <li link-target="messages">
+            <a href="http://localhost/game/account/" title="Messages" class="side-menu-link">
+            <i class="fal fa-comment-alt"></i>Messages
+          </a>            
+          </li>
+          <li link-target="game"><a href="#" title="Game Now" class="side-menu-link"><i class="fal fa-gamepad"></i>Game </a></li>
+          <li link-target="wallet"><a href="#" title="Wallet" class="side-menu-link"><i class="fal fa-wallet"></i>Wallet </a></li>
+          <li link-target="myaccount"><a href="#" title="My account" class="side-menu-link"><i class="fal fa-user-circle"></i>My Account</a></li>
+          <li link-target="referrals"><a href="#" title="Referrals" class="side-menu-link"><i class="fal fa-users"></i>Referrals</a></li>
+          <li link-target="howtoplay"><a href="#" title="Learn how to play" class="side-menu-link"><i class="fal fa-file-alt"></i>How To Play</a></li>
+        </ul>
+      </nav>
+      <!-- Sidebar Navigation end-->
+      <div class="page-content">
+        <div class="page-header">
+          <div class="container-fluid">
+            <h2 class="h5 no-margin-bottom page-title"></h2>
+          </div>
+        </div>
+        <section class="no-padding-top no-padding-bottom" style="overflow-y: scroll;height: 90%;">
+          <div class="container-fluid index-content-loader">
+            <div class="row justify-content-center align-items-center">
+              <span><i class="fa fa-spinner fa-spin fa-3x"></i></span>
+            </div>
+          </div>
+          <div class="container-fluid index-content-container" hidden></div>
+        </section>
+        
+        <footer class="footer">
+          <div class="footer__block block no-margin-bottom">
+            <div class="container-fluid text-center">
+              <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+              <p class="no-margin-bottom">2023 &copy; SITE NAME</p>
+            </div>
+          </div>
+        </footer>
       </div>
-      <section class="no-padding-top no-padding-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="statistic-block block">
-                <div class="progress-details d-flex align-items-end justify-content-between">
-                  <div class="title">
-                    <div class="icon"><i class="icon-user-1"></i></div><strong>New Clients</strong>
-                  </div>
-                  <div class="number dashtext-1">27</div>
-                </div>
-                <div class="progress progress-template">
-                  <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar progress-bar-template dashbg-1"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="statistic-block block">
-                <div class="progress-details d-flex align-items-end justify-content-between">
-                  <div class="title">
-                    <div class="icon"><i class="icon-contract"></i></div><strong>New Projects</strong>
-                  </div>
-                  <div class="number dashtext-2">375</div>
-                </div>
-                <div class="progress progress-template">
-                  <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar progress-bar-template dashbg-2"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="statistic-block block">
-                <div class="progress-details d-flex align-items-end justify-content-between">
-                  <div class="title">
-                    <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>New Invoices</strong>
-                  </div>
-                  <div class="number dashtext-3">140</div>
-                </div>
-                <div class="progress progress-template">
-                  <div role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar progress-bar-template dashbg-3"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="statistic-block block">
-                <div class="progress-details d-flex align-items-end justify-content-between">
-                  <div class="title">
-                    <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>All Projects</strong>
-                  </div>
-                  <div class="number dashtext-4">41</div>
-                </div>
-                <div class="progress progress-template">
-                  <div role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
-                    class="progress-bar progress-bar-template dashbg-4"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="no-padding-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="bar-chart block no-margin-bottom">
-                <canvas id="barChartExample1"></canvas>
-              </div>
-              <div class="bar-chart block">
-                <canvas id="barChartExample2"></canvas>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="line-cahrt block">
-                <canvas id="lineCahrt"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="no-padding-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="stats-2-block block d-flex">
-                <div class="stats-2 d-flex">
-                  <div class="stats-2-arrow low"><i class="fa fa-caret-down"></i></div>
-                  <div class="stats-2-content"><strong class="d-block">5.657</strong><span class="d-block">Standard
-                      Scans</span>
-                    <div class="progress progress-template progress-small">
-                      <div role="progressbar" style="width: 60%;" aria-valuenow="30" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-2">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="stats-2 d-flex">
-                  <div class="stats-2-arrow height"><i class="fa fa-caret-up"></i></div>
-                  <div class="stats-2-content"><strong class="d-block">3.1459</strong><span class="d-block">Team
-                      Scans</span>
-                    <div class="progress progress-template progress-small">
-                      <div role="progressbar" style="width: 35%;" aria-valuenow="30" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-3">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="stats-3-block block d-flex">
-                <div class="stats-3"><strong class="d-block">745</strong><span class="d-block">Total requests</span>
-                  <div class="progress progress-template progress-small">
-                    <div role="progressbar" style="width: 35%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                      class="progress-bar progress-bar-template progress-bar-small dashbg-1"></div>
-                  </div>
-                </div>
-                <div class="stats-3 d-flex justify-content-between text-center">
-                  <div class="item"><strong class="d-block strong-sm">4.124</strong><span
-                      class="d-block span-sm">Threats</span>
-                    <div class="line"></div><small>+246</small>
-                  </div>
-                  <div class="item"><strong class="d-block strong-sm">2.147</strong><span
-                      class="d-block span-sm">Neutral</span>
-                    <div class="line"></div><small>+416</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="drills-chart block">
-                <canvas id="lineChart1"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="no-padding-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
-                  <div class="order dashbg-2">1st</div>
-                </div><a href="#" class="user-title">
-                  <h3 class="h5">Richard Nevoreski</h3><span>@richardnevo</span>
-                </a>
-                <div class="contributions">950 Contributions</div>
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>150</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>340</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>460</strong></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-4.jpg" alt="..." class="img-fluid">
-                  <div class="order dashbg-1">2nd</div>
-                </div><a href="#" class="user-title">
-                  <h3 class="h5">Samuel Watson</h3><span>@samwatson</span>
-                </a>
-                <div class="contributions">772 Contributions</div>
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>80</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>420</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>272</strong></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="user-block block text-center">
-                <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid">
-                  <div class="order dashbg-4">3rd</div>
-                </div><a href="#" class="user-title">
-                  <h3 class="h5">Sebastian Wood</h3><span>@sebastian</span>
-                </a>
-                <div class="contributions">620 Contributions</div>
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>150</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>280</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>190</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="public-user-block block">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-4 d-flex align-items-center">
-                <div class="order">4th</div>
-                <div class="avatar"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Tomas Hecktor</strong><span
-                    class="d-block">@tomhecktor</span></a>
-              </div>
-              <div class="col-lg-4 text-center">
-                <div class="contributions">410 Contributions</div>
-              </div>
-              <div class="col-lg-4">
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>110</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>200</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>100</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="public-user-block block">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-4 d-flex align-items-center">
-                <div class="order">5th</div>
-                <div class="avatar"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Alexander Shelby</strong><span
-                    class="d-block">@alexshelby</span></a>
-              </div>
-              <div class="col-lg-4 text-center">
-                <div class="contributions">320 Contributions</div>
-              </div>
-              <div class="col-lg-4">
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>150</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>120</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>50</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="public-user-block block">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-4 d-flex align-items-center">
-                <div class="order">6th</div>
-                <div class="avatar"> <img src="img/avatar-6.jpg" alt="..." class="img-fluid"></div><a href="#"
-                  class="name"><strong class="d-block">Arther Kooper</strong><span
-                    class="d-block">@artherkooper</span></a>
-              </div>
-              <div class="col-lg-4 text-center">
-                <div class="contributions">170 Contributions</div>
-              </div>
-              <div class="col-lg-4">
-                <div class="details d-flex">
-                  <div class="item"><i class="icon-info"></i><strong>60</strong></div>
-                  <div class="item"><i class="fa fa-gg"></i><strong>70</strong></div>
-                  <div class="item"><i class="icon-flow-branch"></i><strong>40</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="margin-bottom-sm">
-        <div class="container-fluid">
-          <div class="row d-flex align-items-stretch">
-            <div class="col-lg-4">
-              <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Sales Difference</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
-                <div class="row d-flex align-items-end justify-content-between">
-                  <div class="col-5">
-                    <div class="text"><strong class="d-block dashtext-3">$740</strong><span class="d-block">May
-                        2017</span><small class="d-block">320 Sales</small></div>
-                  </div>
-                  <div class="col-7">
-                    <div class="bar-chart chart">
-                      <canvas id="salesBarChart1"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Visit Statistics</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
-                <div class="row d-flex align-items-end justify-content-between">
-                  <div class="col-4">
-                    <div class="text"><strong class="d-block dashtext-1">$457</strong><span class="d-block">May
-                        2017</span><small class="d-block">210 Sales</small></div>
-                  </div>
-                  <div class="col-8">
-                    <div class="bar-chart chart">
-                      <canvas id="visitPieChart"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="stats-with-chart-1 block">
-                <div class="title"> <strong class="d-block">Sales Activities</strong><span class="d-block">Lorem ipsum
-                    dolor sit</span></div>
-                <div class="row d-flex align-items-end justify-content-between">
-                  <div class="col-5">
-                    <div class="text"><strong class="d-block dashtext-2">80%</strong><span class="d-block">May
-                        2017</span><small class="d-block">+35 Sales</small></div>
-                  </div>
-                  <div class="col-7">
-                    <div class="bar-chart chart">
-                      <canvas id="salesBarChart2"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="no-padding-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="checklist-block block">
-                <div class="title"><strong>To Do List</strong></div>
-                <div class="checklist">
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-1" name="input-1" class="checkbox-template">
-                    <label for="input-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-2" name="input-2" checked class="checkbox-template">
-                    <label for="input-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-3" name="input-3" class="checkbox-template">
-                    <label for="input-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-4" name="input-4" class="checkbox-template">
-                    <label for="input-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-5" name="input-5" class="checkbox-template">
-                    <label for="input-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                  <div class="item d-flex align-items-center">
-                    <input type="checkbox" id="input-6" name="input-6" class="checkbox-template">
-                    <label for="input-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="messages-block block">
-                <div class="title"><strong>New Messages</strong></div>
-                <div class="messages"><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-3.jpg" alt="..." class="img-fluid">
-                      <div class="status online"></div>
-                    </div>
-                    <div class="content"> <strong class="d-block">Nadia Halsey</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">9:30am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-2.jpg" alt="..." class="img-fluid">
-                      <div class="status away"></div>
-                    </div>
-                    <div class="content"> <strong class="d-block">Peter Ramsy</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">7:40am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
-                      <div class="status busy"></div>
-                    </div>
-                    <div class="content"> <strong class="d-block">Sam Kaheil</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">6:55am</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-5.jpg" alt="..." class="img-fluid">
-                      <div class="status offline"></div>
-                    </div>
-                    <div class="content"> <strong class="d-block">Sara Wood</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">10:30pm</small></div>
-                  </a><a href="#" class="message d-flex align-items-center">
-                    <div class="profile"><img src="img/avatar-1.jpg" alt="..." class="img-fluid">
-                      <div class="status online"></div>
-                    </div>
-                    <div class="content"> <strong class="d-block">Nader Magdy</strong><span class="d-block">lorem ipsum
-                        dolor sit amit</span><small class="date d-block">9:47pm</small></div>
-                  </a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Credit Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
-                <div class="piechart chart">
-                  <canvas id="pieChartHome1"></canvas>
-                  <div class="text"><strong class="d-block">$2.145</strong><span class="d-block">Sales</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Channel Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
-                <div class="piechart chart">
-                  <canvas id="pieChartHome2"></canvas>
-                  <div class="text"><strong class="d-block">$7.784</strong><span class="d-block">Sales</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="stats-with-chart-2 block">
-                <div class="title"><strong class="d-block">Direct Sales</strong><span class="d-block">Lorem ipsum dolor
-                    sit</span></div>
-                <div class="piechart chart">
-                  <canvas id="pieChartHome3"></canvas>
-                  <div class="text"><strong class="d-block">$4.957</strong><span class="d-block">Sales</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer__block block no-margin-bottom">
-          <div class="container-fluid text-center">
-            <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            <p class="no-margin-bottom">2018 &copy; Your company. Download From <a target="_blank"
-                href="https://templateshub.net">Templates Hub</a>.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   </div>
   <!-- JavaScript files-->
-  <script src="https://gohst007.github.io/deps/vendor/jquery/jquery.min.js"></script>
-  <script src="https://gohst007.github.io/deps/vendor/popper.js/umd/popper.min.js"> </script>
-  <script src="https://gohst007.github.io/deps/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://gohst007.github.io/deps/vendor/jquery.cookie/jquery.cookie.js"> </script>
-  <script src="https://gohst007.github.io/deps/vendor/chart.js/Chart.min.js"></script>
-  <script src="https://gohst007.github.io/deps/vendor/jquery-validation/jquery.validate.min.js"></script>
-  <script src="https://gohst007.github.io/deps/js/charts-home.js"></script>
-  <script src="https://gohst007.github.io/deps/js/front.js"></script>
+  <script src="https://gohst007.github.io/depsvendor/jquery/jquery.min.js"></script>
+  <script src="https://gohst007.github.io/depsvendor/popper.js/umd/popper.min.js"> </script>
+  <script src="https://gohst007.github.io/depsvendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://gohst007.github.io/depsvendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="https://gohst007.github.io/depsvendor/chart.js/Chart.min.js"></script>
+  <script src="https://gohst007.github.io/depsvendor/jquery-validation/jquery.validate.min.js"></script>
+  <script src="https://gohst007.github.io/depsjs/charts-home.js"></script>
+  <script src="https://gohst007.github.io/depsjs/front.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
