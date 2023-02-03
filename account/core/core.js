@@ -182,7 +182,7 @@ function load_page(page) {
     
     $('.index-content-loader').attr('hidden', false);
 
-    container.load('http://localhost/game/account/pages/html/' + page + '.html', function (e) {
+    container.load('http://gohst007.github.io/account/pages/html/' + page + '.html', function (e) {
         setTimeout(() => {
             let text;
 

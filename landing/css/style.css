@@ -93,12 +93,12 @@ p {
 }
 
 @font-face {
-    src: url(http://localhost/game/landing/fonts/BarlowCondensed-Bold.ttf);
+    src: url(http://gohst007.github.io/landing/fonts/BarlowCondensed-Bold.ttf);
     font-family: bb;
 }
 
 @font-face {
-    src: url(http://localhost/game/landing/fonts/BarlowCondensed-Regular.ttf);
+    src: url(http://gohst007.github.io/landing/fonts/BarlowCondensed-Regular.ttf);
     font-family: br;
 }
 
@@ -627,7 +627,7 @@ input[type=radio] {
 
 /* version 3*/
 .index3 #banner {
-    background: url(http://localhost/game/landing/images/banner-bg.jpg);
+    background: url(http://gohst007.github.io/landing/images/banner-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2080,7 +2080,7 @@ input[type=radio] {
 =============================*/
 #subscribe {
     padding: 80px 0;
-    background: url(http://localhost/game/landing/images/subscribe.jpg);
+    background: url(http://gohst007.github.io/landing/images/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -143,22 +143,16 @@ function svr(inputs = []) {
 
     let process = {reason: 'register', data: data};
 
-    // flash('core/app.php', process)
-    // .then(response => {
-    //     load_btn('stop');
+    flash('core/app.php', process)
+    .then(response => {
+        load_btn('stop');
 
-    //     let feed = response.feed;
+        let feed = response.feed;
 
-    //     feed = JSON.parse(feed);
+        feed = JSON.parse(feed);
 
-    //     console.log(feed);
-    // });
-
-    alert('Registration successfull');
-
-    setTimeout(() => {
-        location.href="https://gohst007.github.io/account/"
-    }, 2000);
+        console.log(feed);
+    });
 }
 
 export function init_app() {
