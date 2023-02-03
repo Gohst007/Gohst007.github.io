@@ -182,7 +182,7 @@ function load_page(page) {
     
     $('.index-content-loader').attr('hidden', false);
 
-    container.load('https://gohst007.github.io/account/pages/html/' + page + '.html', function (e) {
+    container.load('http://localhost/game/account/pages/html/' + page + '.html', function (e) {
         setTimeout(() => {
             let text;
 
@@ -238,4 +238,15 @@ export function init_app() {
     load_content('.index-page-content');
     side_menu_nav();
     $('.side-menu-link.home-init-btn').click();
+
+    $('.sidebar-toggle').on('click', function (e) {
+        if (innerWidth < 500) {
+            if ($('#sidebar').hasClass('shrinked')) {
+                $('.section-content-container').css('display', 'none');
+            }
+            else {
+                $('.section-content-container').css('display', 'block');
+            }
+        }
+    });
 }
